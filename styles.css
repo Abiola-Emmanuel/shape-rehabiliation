@@ -249,7 +249,7 @@ nav {
   gap: 30px;
   border-radius: 30px;
   padding: 30px;
-  background-color: #000066;
+  /* background-color: #000066; */
 }
 
 .transform-left,
@@ -261,7 +261,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  color: white;
+  color: black;
 }
 
 .transform-left h2 {
