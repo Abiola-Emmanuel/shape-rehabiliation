@@ -509,6 +509,12 @@ nav {
   transform: scale(1.1);
 }
 
+footer {
+  width: 100%;
+  margin: 40px auto;
+  border: 1px solid red;
+}
+
 @media screen and (max-width: 768px) {
   nav {
     padding: 5px 20px;
@@ -575,6 +581,10 @@ nav {
 
   .sticky {
     width: 100%;
+  }
+
+  .attached {
+    background-position: center;
   }
 
   .attach-text {
