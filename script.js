@@ -1,4 +1,14 @@
-const menuDisplay = document.getElementById('menuDisplay')
+const menuDisplay = document.getElementById('menuDisplay');
+const nav = document.getElementById('nav');
+
+window.addEventListener(('scroll'), () => {
+  const nav = document.getElementById('nav');
+  if (window.scrollY > 50) {
+    nav.classList.add('bg-white');
+  } else {
+    nav.classList.remove('bg-white')
+  }
+})
 
 function home() {
   window.location.href = '/';

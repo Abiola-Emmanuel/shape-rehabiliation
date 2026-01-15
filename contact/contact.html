@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="body">
+
+  <!-- NAVIGATION -->
+
+  <nav id="nav">
+    <div class="logo">
+      <img src="/images/logo.png" alt="Logo" onclick="home()" width="45px" height="45px">
+    </div>
+
+    <div class="nav-mid">
+      <a href="/index.html" class="home">Home</a>
+      <a href="/about/about.html">About us</a>
+      <a href="/gallery/gallery.html">Gallery</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="/contact/contact.html"> <i class="fa fa-phone"></i> Contact us </a>
+      <button class="menu" onclick="openMenu()"><i class="fa fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="menuDisplay">
+
+    <button onclick="closeMenu()" class="close"><i class="fa fa-close"></i></button>
+
+    <a href="/index.html">Home</a>
+    <a href="/about/about.html">About us</a>
+    <a href="/gallery/gallery.html">Gallery</a>
+    <a href="/contact/contact.html">Contact us</a>
+  </div>
+
+  <div class="form-div">
+
+    <div class="catch">
+      <h2>Contact us here</h2>
+
+      <div class="infos">
+        <div class="info1">
+          <p>shaperehaeab@gmail.com</p>
+          <p>08037235458</p>
+        </div>
+
+        <div class="info2">
+          <p><i class="fa fa-facebook"></i> shape rehab</p>
+        </div>
+
+        <div class="info3">
+          <p><i class="fa fa-instagram"></i> Shape_rehab28</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="form">
+
+      <div class="input1">
+        <div class="form-name">
+          <input type="text" placeholder="Your name *">
+          <span><i class="fa fa-user"></i></span>
+        </div>
+
+        <div class="form-email">
+          <input type="text" placeholder="Your email *">
+          <span><i class="fa fa-envelope"></i></span>
+        </div>
+      </div>
+
+      <div class="input2">
+        <div class="form-name">
+          <input type="text" placeholder="Subject*">
+          <span><i class="fa fa-pencil"></i></span>
+        </div>
+      </div>
+
+      <div class="message">
+        <textarea></textarea>
+        <a href="#" class="get">Send message</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="foot-left">
+      <img src="/images/logo-removebg-preview.png" onclick="home()" alt="Logo" width="50px">
+      <p>Shape Rehablitation</p>
+    </div>
+
+    <div class="foot-right">
+      <a href="#">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-telegram"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </div>
+  </footer>
+
+
+</body>
+<script src="contact.js"></script>
+
+</html>

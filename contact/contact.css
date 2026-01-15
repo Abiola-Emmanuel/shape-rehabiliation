@@ -10,19 +10,42 @@
 
 body {
   font-family: "IBM Plex Sans";
+  background: linear-gradient(to bottom right, white 90%, #FF00FF 190%);
+  scroll-behavior: smooth;
+}
+
+.bg-white {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bg-white .menu {
+  color: #000066;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-vid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 nav {
   width: 100%;
-  padding: 10px 50px;
+  padding: 20px 50px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  z-index: 1;
-  background-color: white;
   position: fixed;
   top: 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
 }
 
 .logo {
@@ -37,8 +60,8 @@ nav {
   display: flex;
   gap: 50px;
   border-radius: 50px;
-  margin-left: 80px;
   background-color: white;
+  margin-left: 100px;
 }
 
 .nav-mid a {
@@ -78,12 +101,11 @@ nav {
   border: none;
   background-color: transparent;
   padding: 8px 10px;
-  color: #000066;
 }
 
 
 .mobile-menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -139,72 +161,134 @@ nav {
   pointer-events: auto;
 }
 
-.text {
-  width: 60%;
-  margin: 100px auto;
-  text-align: center;
-}
-
-h1 {
-  margin-top: 50px;
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 40px;
-}
-
-p {
-  font-size: 15px;
-  margin-top: 20px;
-}
-
-.events {
+.form-div {
+  display: flex;
+  margin: 140px auto;
   width: 90%;
-  margin: 50px auto;
-  padding: 10px;
-  position: relative;
+}
+
+.catch {
+  width: 30%;
+  /* border: 1px solid red; */
+}
+
+
+.infos {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 
-/* .events .camera {
-  position: absolute;
-  width: 150px;
-  top: -40px;
-  right: 20px;
-} */
-
-.event1 {
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-}
-
-.event1 h2 {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 40px;
-}
-
-.e1-img {
+.info1,
+.info2,
+.info3 {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  border-bottom: 1px solid lightgray;
+  padding: 0px 0px 20px 0px;
 }
 
-.e1-top,
-.e1-bottom {
+.catch h2 {
+  font-weight: 600;
+  font-family: Outfit, sans-serif;
+  font-size: 38px;
+  color: rgb(0, 0, 0);
+  line-height: 62px;
+}
+
+.catch p {
+  font-family: Outfit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(102, 102, 102, 0.88);
+}
+
+.form {
+  /* border: 1px solid blue; */
+  width: 70%;
+  background-color: white;
+  padding: 10px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+
+.input1 {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.input2 {
+  /* border: 1px solid orange; */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.form-name,
+.form-email {
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.form-name input,
+.form-email input {
+  width: 90%;
+  background-color: whitesmoke;
+  padding: 20px 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  caret-color: blue;
+}
+
+.input1 span,
+.input2 span {
+  font-size: 15px;
+}
+
+.form input::placeholder {
+  font-size: 16px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
+.message textarea {
+  width: 100%;
+  resize: none;
+  height: 35vh;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 20px 10px;
+  border: none;
+  outline: none;
+  font-family: Outfit;
+  caret-color: blue;
+}
 
-.e1-img img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 20px;
+.get {
+  background-color: #000066;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: Outfit, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
 }
 
 footer {
@@ -237,6 +321,7 @@ footer {
   font-size: 18px;
 }
 
+
 @media screen and (max-width: 768px) {
   nav {
     justify-content: space-between;
@@ -255,9 +340,14 @@ footer {
     display: block;
   }
 
-  .e1-img img {
-    width: 500px;
-    height: 300px;
+  .form-div {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .catch,
+  .form {
+    width: 100%;
   }
 
   footer {
@@ -270,16 +360,5 @@ footer {
 
   .foot-right {
     gap: 20px;
-  }
-
-}
-
-@media screen and (max-width: 500px) {
-  .e1-img img {
-    width: 100%;
-  }
-
-  .text {
-    width: 100%;
   }
 }
