@@ -558,6 +558,10 @@ footer {
     width: 80%;
   }
 
+  .testimony .text {
+    width: 100%;
+  }
+
   .policy {
     flex-direction: column;
   }
