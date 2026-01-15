@@ -10,7 +10,7 @@
 
 body {
   font-family: "IBM Plex Sans";
-  background: linear-gradient(to bottom right, white 90%, #FF00FF 120%);
+  background: linear-gradient(to bottom right, white 90%, #FF00FF 190%);
 }
 
 .hero {
@@ -509,10 +509,121 @@ nav {
   transform: scale(1.1);
 }
 
+.questions {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.questions h1 {
+  font-family: var(--font-family);
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.chev {
+  transition: transform 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-wrap {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 20px;
+  background: transparent;
+}
+
+.content {
+  padding: 15px 0 30px 0;
+  color: rgb(179, 179, 179);
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.item[aria-expanded="true"] .chev {
+  transform: rotate(45deg);
+}
+
+.item[aria-expanded="true"] .content-wrap {
+  max-height: 600px;
+  padding: 15px 20px;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+
+.accordion .item {
+  background-color: #000066;
+  margin-bottom: 12px;
+  overflow: hidden;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.accordion .trigger {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  text-align: left;
+}
+
+
+.accordion .left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.accordion .title {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
 footer {
   width: 100%;
-  margin: 40px auto;
-  border: 1px solid red;
+  margin: 40px auto 0px auto;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foot-left {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.foot-left p {
+  font-size: 13px;
+}
+
+.foot-right {
+  display: flex;
+  gap: 30px;
+}
+
+.foot-right a {
+  text-decoration: none;
+  color: #000066;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 768px) {
@@ -598,6 +709,26 @@ footer {
   .part-left,
   .part-right {
     width: 100%;
+  }
+
+  .item .title {
+    font-size: 15px;
+  }
+
+  footer {
+    padding: 5px 14px;
+  }
+
+  footer p {
+    font-size: 13px;
+  }
+
+  .foot-right {
+    gap: 10px;
+  }
+
+  .foot-right a {
+    font-size: 13px;
   }
 }
 
