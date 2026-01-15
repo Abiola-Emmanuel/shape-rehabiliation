@@ -49,6 +49,7 @@ nav {
   gap: 50px;
   border-radius: 50px;
   background-color: white;
+  margin-left: 100px;
 }
 
 .nav-mid a {
