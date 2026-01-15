@@ -1,5 +1,10 @@
+AOS.init({
+  once: true
+})
+
 const menuDisplay = document.getElementById('menuDisplay');
 const nav = document.getElementById('nav');
+
 
 window.addEventListener(('scroll'), () => {
   const nav = document.getElementById('nav');
@@ -24,6 +29,10 @@ function closeMenu() {
   menuDisplay.classList.remove('show');
   document.body.style.overflow = '';
 }
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
   const items = document.querySelectorAll('.accordion .item');
