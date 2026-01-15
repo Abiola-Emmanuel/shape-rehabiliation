@@ -243,7 +243,7 @@ nav {
 
 .transform {
   width: 95%;
-  margin: auto;
+  margin: 80px auto;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -283,6 +283,103 @@ nav {
   height: 100%;
   object-fit: cover;
 }
+
+.objective {
+  display: flex;
+  gap: 30px;
+  width: 90%;
+  margin: 90px auto;
+}
+
+.obj-left,
+.obj-right {
+  width: 50%;
+}
+
+.obj-left {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.scroll-mask {
+  height: 400px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.scroll-mask {
+  mask-image: linear-gradient(to bottom,
+      transparent,
+      black 15%,
+      black 85%,
+      transparent);
+}
+
+.scroll-track {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: scrollUp 20s linear infinite;
+}
+
+.card {
+  background: white;
+  font-size: 1.2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  position: relative;
+  height: 300px;
+}
+
+.card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* ANIMATION */
+@keyframes scrollUp {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.obj-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
+}
+
+
+.obj-right a {
+  text-decoration: none;
+  color: white;
+  background-color: #000066;
+  padding: 10px 20px;
+  border-radius: 50px;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  transition: transform 0.4s ease;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.obj-right a:hover {
+  transform: scale(1.1);
+}
+
 
 @media screen and (max-width: 768px) {
   nav {
@@ -336,6 +433,15 @@ nav {
 
   .transform-left,
   .transform-right {
+    width: 100%;
+  }
+
+  .objective {
+    flex-direction: column;
+  }
+
+  .obj-left,
+  .obj-right {
     width: 100%;
   }
 }
