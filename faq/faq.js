@@ -1,6 +1,6 @@
 AOS.init({
   once: true
-});
+})
 
 const menuDisplay = document.getElementById('menuDisplay')
 
