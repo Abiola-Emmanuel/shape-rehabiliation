@@ -1,4 +1,8 @@
-const menuDisplay = document.getElementById('menuDisplay')
+const menuDisplay = document.getElementById('menuDisplay');
+
+function home() {
+  window.location.href = '/';
+}
 
 function openMenu() {
   menuDisplay.classList.add('show');
