@@ -1,0 +1,351 @@
+:root {
+  --font-family: Arapey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Sans";
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-vid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+nav {
+  width: 100%;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.logo {
+  border-radius: 50px;
+}
+
+.logo img {
+  border-radius: 50px;
+}
+
+.nav-mid {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-mid a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: transform 0.4s ease;
+}
+
+.nav-mid a:hover {
+  transform: scale(1.1);
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+.menu {
+  display: none;
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+  padding: 8px 10px;
+  color: white;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%);
+}
+
+.hero-text h1 {
+  font-family: Arapey;
+  font-size: 60px;
+  color: white;
+  font-weight: 400
+}
+
+.hero-text p {
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero-text a {
+  text-decoration: none;
+  color: #000066;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  transition: transform 0.4s ease;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.hero-text a:hover {
+  transform: scale(1.1);
+}
+
+.hero-text i {
+  background-color: #000066;
+  color: white;
+  padding: 8px 9px;
+  border-radius: 50px;
+}
+
+.discover {
+  margin-top: 60px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.d-txt {
+  width: 90%;
+  font-family: var(--font-family);
+}
+
+.d-txt h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.wellness {
+  display: flex;
+  gap: 30px;
+  margin: 120px auto;
+  width: 90%;
+}
+
+.wl-top h2 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 67px;
+  line-height: 74px;
+}
+
+.well-left,
+.well-right {
+  width: 50%;
+}
+
+.well-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 30px 10px;
+}
+
+.wl-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.wl-img {
+  display: flex;
+  gap: 0;
+}
+
+.wlll-img {
+  margin-left: -10px;
+}
+
+.well-left a {
+  text-decoration: none;
+  color: white;
+  background-color: #000066;
+  align-self: flex-start;
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  transition: transform 0.4s ease;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.well-left a:hover {
+  transform: scale(1.1);
+}
+
+
+.well-right {
+  position: relative;
+  height: 600px;
+}
+
+.well-right video {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.transform {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-radius: 30px;
+  padding: 30px;
+  background-color: #000066;
+}
+
+.transform-left,
+.transform-right {
+  width: 50%;
+}
+
+.transform-left {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: white;
+}
+
+.transform-left h2 {
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.transform-right {
+  position: relative;
+  height: 400px;
+}
+
+.transform-right img {
+  position: absolute;
+  border-radius: 30px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 5px 20px;
+  }
+
+  .nav-mid {
+    display: none;
+  }
+
+  .nav-right a {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .hero-text {
+    top: 20%;
+  }
+
+  .hero-text h1 {
+    font-size: 50px;
+  }
+
+  .d-txt {
+    width: 100%;
+  }
+
+  .d-txt h2 {
+    font-size: 30px;
+  }
+
+  .wellness {
+    flex-direction: column;
+  }
+
+  .well-left,
+  .well-right {
+    width: 100%;
+  }
+
+  .well-right video {
+    width: 100%;
+  }
+
+  .transform {
+    flex-direction: column;
+  }
+
+  .transform-left,
+  .transform-right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .d-txt {
+    width: 80%;
+  }
+
+  .d-txt h2 {
+    font-size: 25px;
+  }
+}
