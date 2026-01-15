@@ -11,6 +11,7 @@
 body {
   font-family: "IBM Plex Sans";
   background: linear-gradient(to bottom right, white 90%, #FF00FF 190%);
+  scroll-behavior: smooth;
 }
 
 .hero {

@@ -2,11 +2,14 @@
   --font-family: Arapey;
 }
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Sans";
 }
 
 nav {
@@ -251,6 +254,8 @@ nav {
   margin-top: 60px;
   display: flex;
   gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .founder-left,
@@ -443,9 +448,12 @@ nav {
     gap: 50px;
   }
 
-  .founder-left,
-  .founder-right {
+  .founder-left {
     width: 100%;
+  }
+
+  .founder-right img {
+    width: 300px;
   }
 
   .vm {
