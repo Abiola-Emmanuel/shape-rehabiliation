@@ -6,10 +6,142 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery</title>
   <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/glightbox-3.3.0/dist/css/glightbox.min.css">
 </head>
 
 <body>
 
+  <!-- NAVIGATION -->
+
+  <nav>
+    <div class="logo">
+      <img src="/images/logo.png" alt="Logo" width="45px" height="45px">
+    </div>
+
+    <div class="nav-mid">
+      <a href="/index.html" class="home">Home</a>
+      <a href="/about/about.html">About us</a>
+      <a href="/gallery/gallery.html">Gallery</a>
+
+    </div>
+
+    <div class="nav-right">
+      <a href="#"> <i class="fa fa-phone"></i> Contact us </a>
+      <button class="menu" onclick="openMenu()"><i class="fa fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="menuDisplay">
+
+    <button onclick="closeMenu()" class="close"><i class="fa fa-close"></i></button>
+
+    <a href="/index.html">Home</a>
+    <a href="/about/about.html">About us</a>
+    <a href="/gallery/gallery.html">Gallery</a>
+  </div>
+
+  <div class="text">
+    <h1>A Space Designed for Healing, Growth, and Recovery</h1>
+
+    <p>Explore moments that reflect our commitment to compassionate care, personalized rehabilitation, and supportive
+      environments where individuals feel safe, empowered, and encouraged to thrive.</p>
+  </div>
+
+  <div class="events">
+    <!-- <img src="/images/camera.png" class="camera" alt="Camera"> -->
+
+    <div class="event1">
+      <h2>Events</h2>
+
+      <div class="e1-img">
+        <div class="e1-top">
+          <img src="/images/e1.jpeg" class="glightbox">
+          <img src="/images/e2.jpeg" class="glightbox">
+          <img src="/images/e3.jpeg" class="glightbox">
+        </div>
+
+        <div class="e1-bottom">
+          <img src="/images/e4.jpeg" class="glightbox">
+          <img src="/images/e5.jpeg" class="glightbox">
+          <img src="/images/e6.jpeg" class="glightbox">
+        </div>
+      </div>
+    </div>
+
+    <div class="event1">
+      <h2>Consultations</h2>
+
+      <div class="e1-img">
+        <div class="e1-top">
+          <img src="/images/cons1.jpeg" class="glightbox">
+          <img src="/images/cons2.jpeg" class="glightbox">
+          <img src="/images/cons3.jpeg" class="glightbox">
+        </div>
+
+        <div class="e1-bottom">
+          <img src="/images/cons4.jpeg" class="glightbox">
+          <img src="/images/cons5.jpeg" class="glightbox">
+          <img src="/images/cons6.jpeg" class="glightbox">
+        </div>
+      </div>
+    </div>
+
+    <div class="event1">
+      <h2>Staff</h2>
+
+      <div class="e1-img">
+        <div class="e1-top">
+          <img src="/images/st1.jpeg" class="glightbox">
+          <img src="/images/st2.jpeg" class="glightbox">
+          <img src="/images/st3.jpeg" class="glightbox">
+        </div>
+
+        <div class="e1-bottom">
+          <img src="/images/st4.jpeg" class="glightbox">
+          <img src="/images/st5.jpeg" class="glightbox">
+          <img src="/images/st6.jpeg" class="glightbox">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="foot-left">
+      <img src="/images/logo-removebg-preview.png" alt="Logo" width="50px">
+      <p>Shape Rehablitation</p>
+    </div>
+
+    <div class="foot-right">
+      <a href="#">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-telegram"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </div>
+  </footer>
+
 </body>
+<script src="/glightbox-3.3.0/dist/js/glightbox.min.js"></script>
+<script src="gallery.js"></script>
+
 
 </html>

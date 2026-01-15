@@ -800,17 +800,14 @@ footer {
     padding: 5px 14px;
   }
 
-  footer p {
-    font-size: 13px;
+  .foot-left p {
+    display: none;
   }
 
   .foot-right {
-    gap: 10px;
+    gap: 20px;
   }
 
-  .foot-right a {
-    font-size: 13px;
-  }
 }
 
 @media screen and (max-width: 500px) {
