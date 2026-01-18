@@ -3,6 +3,8 @@ AOS.init({
 });
 
 const menuDisplay = document.getElementById('menuDisplay')
+const nav = document.getElementById('nav');
+
 
 function home() {
   window.location.href = '/';
