@@ -1,6 +1,6 @@
-:root {
+/* :root {
   --font-family: Arapey;
-}
+} */
 
 * {
   margin: 0;
@@ -29,58 +29,58 @@ body {
 }
 
 nav {
-  width: 100%;
-  padding: 20px 50px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  z-index: 1;
+  width: 55%;
+  max-width: 736.7px;
   position: fixed;
-  top: 0;
+  padding: 5px 20px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 50px;
+  z-index: 999;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.logo {
-  border-radius: 50px;
+.nav-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
-.logo img {
-  border-radius: 50px;
+nav a {
+  text-decoration: none;
+  color: #000066;
+  font-size: 14px;
+  transition: transform 0.4s ease;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .nav-mid {
   display: flex;
-  gap: 50px;
-  border-radius: 50px;
-  background-color: white;
-}
-
-.nav-mid a {
-  text-decoration: none;
-  color: #000066;
-  border-radius: 50px;
-  padding: 15px 30px;
-  font-size: 16px;
-  transition: transform 0.4s ease, background-color 0.4s ease, color 0.4s ease;
-}
-
-.nav-mid a:hover {
-  transform: scale(1.1);
-  background-color: #000066;
-  color: white;
+  gap: 20px;
 }
 
 .nav-right a {
-  text-decoration: none;
+  border: 1px solid #000066;
+  padding: 5px 10px;
   color: #000066;
-  background-color: white;
-  padding: 15px 20px;
-  border-radius: 100px;
-  font-size: 16px;
-  transition: transform 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+  border-radius: 50px;
+  transition: background-color 0.4s ease;
+}
+
+.nav-right button {
+  color: #000066;
 }
 
 .nav-right a:hover {
-  transform: scale(1.1);
   background-color: #000066;
   color: white;
 }
@@ -102,7 +102,7 @@ nav {
   width: 100%;
   height: 100vh;
   background-color: white;
-  z-index: 5;
+  z-index: 9999;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -111,6 +111,11 @@ nav {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+}
+
+.nav-hidden {
+  opacity: 0;
   pointer-events: none;
 }
 
@@ -175,7 +180,7 @@ nav {
 }
 
 .hero-text h1 {
-  font-family: Arapey;
+  /* font-family: Arapey; */
   font-size: 60px;
   color: white;
   font-weight: 400
@@ -239,7 +244,6 @@ nav {
 
 .d-txt {
   width: 90%;
-  font-family: var(--font-family);
 }
 
 .d-txt h2 {
@@ -255,7 +259,6 @@ nav {
 }
 
 .wl-top h2 {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 67px;
   line-height: 74px;
@@ -470,7 +473,6 @@ nav {
 }
 
 .conduct-div h1 {
-  font-family: var(--font-family);
   font-size: 40px;
   font-weight: 400;
   text-align: center;
@@ -503,7 +505,6 @@ nav {
 }
 
 .sticky h2 {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 30px;
   color: #000066;
@@ -598,7 +599,6 @@ nav {
 }
 
 .questions h1 {
-  font-family: var(--font-family);
   font-size: 40px;
   font-weight: 400;
 }
@@ -709,17 +709,54 @@ footer {
   font-size: 18px;
 }
 
+@media screen and (min-width: 1500px) {
+  nav {
+    width: 30%;
+  }
+}
 
 @media screen and (min-width: 1200px) {
+  nav {
+    width: 50%;
+    box-shadow:
+      0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 30px;
+  }
+
+
   .hero-text {
-    top: 50%;
+    top: 35%;
+  }
+
+  .wl-bottom p {
+    font-size: 23px;
+  }
+
+  .transform-left p {
+    font-size: 23px;
+  }
+
+  .obj-right p {
+    font-size: 20px;
+  }
+
+  .sticky p {
+    font-size: 23px;
+  }
+
+  .attach-text p {
+    font-size: 23px;
+  }
+
+  .part-left p {
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
   nav {
     justify-content: space-between;
-    padding: 15px 20px;
+    padding: 5px 30px;
   }
 
   .nav-mid {
@@ -735,11 +772,11 @@ footer {
   }
 
   .hero-text {
-    top: 20%;
+    top: 25%;
   }
 
   .hero-text h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .d-txt {
@@ -818,6 +855,30 @@ footer {
     gap: 20px;
   }
 
+}
+
+@media screen and (max-width: 768px) {
+
+  nav {
+    width: 95%;
+    /* more breathing space */
+    padding: 10px 18px;
+  }
+
+  .nav-mid {
+    display: none;
+    /* hide center links */
+  }
+
+  .nav-right a {
+    display: none;
+    /* hide phone icon */
+  }
+
+  .menu {
+    display: block;
+    /* show hamburger */
+  }
 }
 
 @media screen and (max-width: 500px) {

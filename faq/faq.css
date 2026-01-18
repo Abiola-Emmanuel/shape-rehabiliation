@@ -1,6 +1,6 @@
-:root {
+/* :root {
   --font-family: Arapey;
-}
+} */
 
 * {
   margin: 0;
@@ -144,7 +144,6 @@ nav {
 }
 
 .faq h1 {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 40px;
 }

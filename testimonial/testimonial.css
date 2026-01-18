@@ -1,6 +1,6 @@
-:root {
+/* :root {
   --font-family: Arapey;
-}
+} */
 
 * {
   margin: 0;
@@ -144,7 +144,6 @@ nav {
 }
 
 .testimonial-text h1 {
-  font-family: var(--font-family);
   font-size: 40px;
   font-weight: 400;
   text-align: center;
@@ -292,6 +291,12 @@ footer {
   text-decoration: none;
   color: #000066;
   font-size: 18px;
+}
+
+@media screen and (min-width: 1200px) {
+  .testimonial-text {
+    margin-top: 140px;
+  }
 }
 
 @media screen and (max-width: 768px) {

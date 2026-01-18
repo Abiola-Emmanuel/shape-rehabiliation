@@ -1,6 +1,6 @@
-:root {
+/* :root {
   --font-family: Arapey;
-}
+} */
 
 * {
   margin: 0;
@@ -13,63 +13,63 @@ body {
 }
 
 nav {
-  width: 100%;
-  padding: 10px 50px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  z-index: 1;
-  background-color: white;
+  width: 55%;
+  max-width: 736.7px;
   position: fixed;
-  top: 0;
+  padding: 5px 20px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 50px;
+  z-index: 999;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.logo {
-  border-radius: 50px;
+.nav-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
-.logo img {
-  border-radius: 50px;
+
+nav a {
+  text-decoration: none;
+  color: #000066;
+  font-size: 14px;
+  transition: transform 0.4s ease;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .nav-mid {
   display: flex;
-  gap: 50px;
-  border-radius: 50px;
-  background-color: white;
-}
-
-.nav-mid a {
-  text-decoration: none;
-  color: #000066;
-  border-radius: 50px;
-  padding: 15px 30px;
-  font-size: 16px;
-  transition: transform 0.4s ease, background-color 0.4s ease, color 0.4s ease;
-}
-
-.nav-mid a:hover {
-  transform: scale(1.1);
-  background-color: #000066;
-  color: white;
+  gap: 20px;
 }
 
 .nav-right a {
-  text-decoration: none;
+  border: 1px solid #000066;
+  padding: 5px 10px;
   color: #000066;
-  background-color: white;
-  padding: 15px 20px;
-  border-radius: 100px;
-  font-size: 16px;
-  transition: transform 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+  border-radius: 50px;
+  transition: background-color 0.4s ease;
+}
+
+.nav-right button {
+  color: #000066;
 }
 
 .nav-right a:hover {
-  transform: scale(1.1);
   background-color: #000066;
   color: white;
 }
+
 
 .menu {
   display: none;
@@ -148,7 +148,6 @@ nav {
 
 .title {
   font-size: 50px;
-  font-family: var(--font-family);
   font-weight: 400;
   margin-top: 40px;
 }
@@ -244,7 +243,6 @@ nav {
 }
 
 .founder-div h1 {
-  font-family: var(--font-family);
   text-align: center;
   font-size: 50px;
   font-weight: 400;
@@ -271,7 +269,6 @@ nav {
 }
 
 .founder-left h2 {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 40px;
 }
@@ -331,7 +328,6 @@ nav {
 }
 
 .testimony h1 {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 40px;
   text-align: center;
@@ -378,7 +374,6 @@ nav {
 
 .vision h2,
 .mission h2 {
-  font-family: var(--font-family);
   font-weight: 400;
   text-align: center;
   font-size: 40px;
@@ -408,7 +403,6 @@ nav {
 }
 
 .policy-left h2 {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 40px;
 }
@@ -416,13 +410,14 @@ nav {
 .policy-right img {
   position: absolute;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 .pioneer {
   display: flex;
   width: 90%;
-  margin: auto;
+  margin: 50px auto;
   align-items: center;
   padding: 20px;
 }
@@ -445,7 +440,6 @@ nav {
 }
 
 .pioneer-right h2 {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 40px;
 }
@@ -466,7 +460,6 @@ nav {
 }
 
 .team-div .title {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 40px;
   text-align: center;
@@ -556,10 +549,76 @@ footer {
 }
 
 
+
+@media screen and (min-width: 1500px) {
+  nav {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    width: 50%;
+    box-shadow:
+      0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 30px;
+  }
+
+  .who p {
+    font-size: 23px;
+  }
+
+  .abt-ceo {
+    font-size: 18px;
+  }
+
+  .vm p {
+    font-size: 18px;
+  }
+
+  .policy-left p {
+    font-size: 20px;
+  }
+
+  .pioneer-right p {
+    font-size: 18px;
+  }
+
+  .testimony p {
+    font-size: 20px;
+  }
+
+  .policy-right img {
+    object-fit: contain;
+  }
+
+  .main-test {
+    width: 50%;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .test-left,
+  .test-right {
+    width: 40%;
+  }
+
+
+  .test-left img,
+  .test-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+}
+
+
 @media screen and (max-width: 768px) {
   nav {
     justify-content: space-between;
-    padding: 15px 20px;
+    padding: 5px 30px;
+    width: 90%;
   }
 
   .nav-mid {
@@ -569,6 +628,7 @@ footer {
   .nav-right a {
     display: none;
   }
+
 
   .menu {
     display: block;
@@ -632,6 +692,17 @@ footer {
     width: 100%;
   }
 
+  .main-test {
+    gap: 20px;
+  }
+
+  .test-left img,
+  .test-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .staffs {
     flex-wrap: wrap;
   }
@@ -663,4 +734,45 @@ footer {
   .st1 {
     width: 90%;
   }
+}
+
+@media screen and (min-width: 2000px) {
+
+  .founder-left,
+  .founder-right {
+    width: 40%;
+  }
+
+  .abt-ceo {
+    font-size: 30px;
+  }
+
+  .vision,
+  .mission {
+    width: 40%;
+    padding: 10px;
+  }
+
+  .policy-left,
+  .policy-right {
+    width: 40%;
+  }
+
+  .policy-left p {
+    font-size: 20px;
+  }
+
+  .pioneer-left,
+  .pioneer-right {
+    width: 40%;
+  }
+
+  .testimony {
+    width: 50%;
+  }
+
+  .testimony .text p {
+    font-size: 23px;
+  }
+
 }
