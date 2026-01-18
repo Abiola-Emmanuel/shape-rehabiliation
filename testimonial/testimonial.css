@@ -201,6 +201,12 @@ nav {
   display: flex;
   gap: 20px;
   width: max-content;
+  animation-play-state: running;
+  transition: animation-play-state 0.2s ease;
+}
+
+.main-testimonial:hover .mt-track {
+  animation-play-state: paused;
 }
 
 @keyframes scroll-left {
@@ -225,10 +231,12 @@ nav {
 
 .mt-track.left {
   animation: scroll-left 40s linear infinite;
+  animation-play-state: running;
 }
 
 .mt-track.right {
   animation: scroll-right 40s linear infinite;
+  animation-play-state: running;
 }
 
 
@@ -319,6 +327,45 @@ footer {
 
   .testimonial-text {
     width: 90%;
+  }
+
+  .mt-track {
+    animation-play-state: paused;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    cursor: grab;
+
+    width: 100% !important;
+    display: flex;
+    gap: 20px;
+    padding: 0 10px;
+    scroll-padding: 0 10px;
+  }
+
+  .mt-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mt-track:active {
+    cursor: grabbing;
+  }
+
+  .mt-top::before,
+  .mt-top::after,
+  .mt-bottom::before,
+  .mt-bottom::after {
+    display: none;
+  }
+
+  .mt-top,
+  .mt-bottom {
+    overflow-x: auto;
+  }
+
+  .mt-track.left,
+  .mt-track.right {
+    transform: none !important;
   }
 
   footer {
