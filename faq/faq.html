@@ -19,7 +19,7 @@
 
   <!-- NAVIGATION -->
 
-  <nav>
+  <nav id="nav">
     <div class="logo">
       <img src="/images/logo.png" onclick="home()" alt="Logo" width="45px" height="45px">
     </div>
@@ -34,7 +34,7 @@
     </div>
 
     <div class="nav-right">
-      <a href="/contact/contact.html"> <i class="fa fa-phone"></i> </a>
+      <a href="/contact/contact.html"> Contact</a>
       <button class="menu" onclick="openMenu()"><i class="fa fa-bars"></i></button>
     </div>
   </nav>
@@ -53,79 +53,102 @@
 
   <div class="faq">
 
-    <h1 data-aos="zoom-out-down">Frequently asked questions</h1>
-    <p class="stuck" data-aos="fade-down">Stuck on something? We're here to help with all your questions and answers in
-      one place</p>
+    <div class="faq-top">
+
+      <div class="faq-left">
+        <h1 data-aos="zoom-out-down">Frequently asked questions</h1>
+        <p class="stuck" data-aos="fade-down">Stuck on something? We're here to help with all your questions and answers
+          in
+          one place</p>
+        <p>
+          Looking for clarity or reassurance? Here you’ll find thoughtful answers to common questions about our approach
+          to mental wellness, how we support you, and what to expect as you begin your journey with us.
+        </p>
+      </div>
+
+      <div class="faq-right">
+        <img src="/images/question-mark.png" alt="Question">
+      </div>
+
+    </div>
 
     <div class="questions">
 
       <div class="questions-left">
 
-        <div class="q1" data-aos="zoom-out-down">
-
-          <div class="icon">
-            <i class="fa fa-heart"></i>
+        <div class="accordion" id="faq">
+          <div class="item" aria-expanded="false">
+            <button class="trigger" aria-controls="c1" aria-expanded="false" id="t1">
+              <div class="left">
+                <div class="title">Is therapy only for people with mental health conditions?</div>
+              </div>
+              <div class="chev" aria-hidden="true">
+                <i class="fa fa-plus"></i>
+              </div>
+            </button>
+            <div class="content-wrap" id="c1" role="region" aria-labelledby="t1">
+              <div class="content">
+                Not at all. Therapy is for anyone who wants support, clarity, or personal growth. You don’t need to be
+                in
+                crisis to benefit. Many people seek therapy to manage stress, improve relationships, build
+                self-awareness,
+                or navigate life transitions.
+              </div>
+            </div>
           </div>
 
-          <div class="text">
-            <h3>What services do you offer?</h2>
-              <p>We provide mental wellness resources designed to support emotional balance, stress management, and
-                personal growth.</p>
-          </div>
-        </div>
-
-        <div class="q1" data-aos="zoom-out-down">
-
-          <div class="icon">
-            <i class="fa fa-leaf"></i>
-          </div>
-
-          <div class="text">
-            <h3>Is this platform suitable for beginners to mental wellness?</h2>
-              <p>Yes. Our platform is designed to be welcoming and accessible, even if you’re just starting your mental
-                wellness journey.</p>
-          </div>
-        </div>
-
-        <div class="q1" data-aos="zoom-out-down">
-
-          <div class="icon">
-            <i class="fa fa-cloud"></i>
+          <div class="item" aria-expanded="false">
+            <button class="trigger" aria-controls="c2" aria-expanded="false" id="t2">
+              <div class="left">
+                <div class="title">How do I know if I need mental health support?</div>
+              </div>
+              <div class="chev" aria-hidden="true">
+                <i class="fa fa-plus"></i>
+              </div>
+            </button>
+            <div class="content-wrap" id="c2" role="region" aria-labelledby="t2">
+              <div class="content">
+                If you’ve been feeling overwhelmed, emotionally drained, anxious, disconnected, or stuck for a while,
+                it may
+                be helpful to talk to someone. Mental health support isn’t about labels it’s about giving yourself
+                space to
+                feel heard and supported.
+              </div>
+            </div>
           </div>
 
-          <div class="text">
-            <h3>How can this help reduce stress or anxiety?</h2>
-              <p>We offer tools and guidance that encourage calm, reflection, and emotional regulation. By practicing
-                these regularly, many people find it easier to manage stress, reduce anxious thoughts, and feel more
-                grounded in their daily lives.</p>
-          </div>
-        </div>
-
-        <div class="q1" data-aos="zoom-out-down">
-
-          <div class="icon">
-            <i class="fa fa-cloud"></i>
-          </div>
-
-          <div class="text">
-            <h3>How can this help reduce stress or anxiety?</h2>
-              <p>We offer tools and guidance that encourage calm, reflection, and emotional regulation. By practicing
-                these regularly, many people find it easier to manage stress, reduce anxious thoughts, and feel more
-                grounded in their daily lives.</p>
-          </div>
-        </div>
-
-        <div class="q1" data-aos="zoom-out-down">
-
-          <div class="icon">
-            <i class="fa fa-lightbulb-o"></i>
+          <div class="item" aria-expanded="false">
+            <button class="trigger" aria-controls="c3" aria-expanded="false" id="t3">
+              <div class="left">
+                <div class="title">Will my sessions be private and confidential?</div>
+              </div>
+              <div class="chev" aria-hidden="true">
+                <i class="fa fa-plus"></i>
+              </div>
+            </button>
+            <div class="content-wrap" id="c3" role="region" aria-labelledby="t3">
+              <div class="content">
+                Yes. Your privacy is a top priority. All sessions are confidential, and your personal information is
+                protected. We create a safe, non-judgmental space where you can speak openly and honestly.
+              </div>
+            </div>
           </div>
 
-          <div class="text">
-            <h3>Do I need prior experience with therapy or mindfulness?</h2>
-              <p>Not at all. Our resources are created for people at all levels, whether you’re completely new or
-                already familiar with mental health practices. You can move at your own pace and choose what feels right
-                for you.</p>
+          <div class="item" aria-expanded="false">
+            <button class="trigger" aria-controls="c4" aria-expanded="false" id="t4">
+              <div class="left">
+                <div class="title">What if I don’t know what to say during a session?</div>
+              </div>
+              <div class="chev" aria-hidden="true">
+                <i class="fa fa-plus"></i>
+              </div>
+            </button>
+            <div class="content-wrap" id="c4" role="region" aria-labelledby="t4">
+              <div class="content">
+                That’s completely okay. There’s no right or wrong way to start. Your therapist will gently guide the
+                conversation and help you explore your thoughts at your own pace. Just showing up is enough.
+              </div>
+            </div>
           </div>
         </div>
 
@@ -133,57 +156,77 @@
 
       <div class="questions-right">
 
-        <div class="q1" data-aos="zoom-out-down">
-
-          <div class="icon">
-            <i class="fa fa-lock"></i>
+        <div class="accordion" id="faq">
+          <div class="item" aria-expanded="false">
+            <button class="trigger" aria-controls="c1" aria-expanded="false" id="t1">
+              <div class="left">
+                <div class="title">Is my information kept private and confidential?</div>
+              </div>
+              <div class="chev" aria-hidden="true">
+                <i class="fa fa-plus"></i>
+              </div>
+            </button>
+            <div class="content-wrap" id="c1" role="region" aria-labelledby="t1">
+              <div class="content">
+                Yes. Your privacy and trust are extremely important to us. Any personal information shared on this
+                platform is handled with care and kept secure, ensuring a safe and respectful experience.
+              </div>
+            </div>
           </div>
 
-          <div class="text">
-            <h3>Is my information kept private and confidential?</h2>
-              <p>Yes. Your privacy and trust are extremely important to us. Any personal information shared on this
-                platform is handled with care and kept secure, ensuring a safe and respectful experience.</p>
-          </div>
-        </div>
-
-        <div class="q1" data-aos="zoom-out-down">
-
-          <div class="icon">
-            <i class="fa fa-clock-o"></i>
-          </div>
-
-          <div class="text">
-            <h3>How often should I engage with the resources provided?</h2>
-              <p>There’s no fixed schedule consistency matters more than intensity. Even a few minutes a day or a few
-                times a week can make a meaningful difference over time.</p>
-          </div>
-        </div>
-
-        <div class="q1" data-aos="zoom-out-down">
-
-          <div class="icon">
-            <i class="fa fa-line-chart"></i>
+          <div class="item" aria-expanded="false">
+            <button class="trigger" aria-controls="c2" aria-expanded="false" id="t2">
+              <div class="left">
+                <div class="title">How often should I engage with the resources provided?</div>
+              </div>
+              <div class="chev" aria-hidden="true">
+                <i class="fa fa-plus"></i>
+              </div>
+            </button>
+            <div class="content-wrap" id="c2" role="region" aria-labelledby="t2">
+              <div class="content">
+                There’s no fixed schedule consistency matters more than intensity. Even a few minutes a day or a few
+                times a week can make a meaningful difference over time.
+              </div>
+            </div>
           </div>
 
-          <div class="text">
-            <h3>Can this support my emotional well-being long term?</h2>
-              <p>Yes. Our approach focuses on sustainable habits and self-understanding rather than quick fixes. With
+          <div class="item" aria-expanded="false">
+            <button class="trigger" aria-controls="c3" aria-expanded="false" id="t3">
+              <div class="left">
+                <div class="title">Can this support my emotional well-being long term?</div>
+              </div>
+              <div class="chev" aria-hidden="true">
+                <i class="fa fa-plus"></i>
+              </div>
+            </button>
+            <div class="content-wrap" id="c3" role="region" aria-labelledby="t3">
+              <div class="content">
+                Yes. Our approach focuses on sustainable habits and self-understanding rather than quick fixes. With
                 regular engagement, many users experience improved emotional resilience and long-term mental clarity.
-              </p>
-          </div>
-        </div>
-
-        <div class="q1" data-aos="zoom-out-down">
-
-          <div class="icon">
-            <i class="fa fa-circle-o"></i>
+              </div>
+            </div>
           </div>
 
-          <div class="text">
-            <h3>How do I get started on my mental wellness journey?</h2>
-              <p>Getting started is simple. Explore the resources, choose what resonates with you, and begin at your own
-                pace. Small, consistent steps can lead to meaningful changes over time</p>
+          <div class="item" aria-expanded="false">
+            <button class="trigger" aria-controls="c4" aria-expanded="false" id="t4">
+              <div class="left">
+                <div class="title">How can this help reduce stress or anxiety?</div>
+              </div>
+              <div class="chev" aria-hidden="true">
+                <i class="fa fa-plus"></i>
+              </div>
+            </button>
+            <div class="content-wrap" id="c4" role="region" aria-labelledby="t4">
+              <div class="content">
+                <p>We offer tools and guidance that encourage calm, reflection, and emotional regulation. By practicing
+                  these regularly, many people find it easier to manage stress, reduce anxious thoughts, and feel more
+                  grounded in their daily lives.
+                </p>
+              </div>
+            </div>
           </div>
+
         </div>
 
       </div>
