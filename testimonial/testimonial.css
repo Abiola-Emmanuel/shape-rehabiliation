@@ -249,8 +249,9 @@ nav a:hover {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 15px;
-  gap: 10px;
+  gap: 20px;
   flex-shrink: 0;
   background-color: #f3f3ff;
 }
