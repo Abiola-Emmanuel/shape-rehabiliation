@@ -709,49 +709,9 @@ footer {
   font-size: 18px;
 }
 
-@media screen and (min-width: 1500px) {
-  nav {
-    width: 30%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  nav {
-    width: 50%;
-    box-shadow:
-      0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px 30px;
-  }
 
 
-  .hero-text {
-    top: 35%;
-  }
 
-  .wl-bottom p {
-    font-size: 23px;
-  }
-
-  .transform-left p {
-    font-size: 23px;
-  }
-
-  .obj-right p {
-    font-size: 20px;
-  }
-
-  .sticky p {
-    font-size: 23px;
-  }
-
-  .attach-text p {
-    font-size: 23px;
-  }
-
-  .part-left p {
-    font-size: 20px;
-  }
-}
 
 @media screen and (max-width: 768px) {
   nav {
@@ -888,5 +848,110 @@ footer {
 
   .d-txt h2 {
     font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  nav {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    width: 50%;
+    box-shadow:
+      0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 30px;
+  }
+
+
+  .hero-text {
+    top: 35%;
+  }
+
+  .hero-text p {
+    font-size: 20px;
+  }
+
+  .wl-bottom p {
+    font-size: 23px;
+  }
+
+  .transform-left p {
+    font-size: 23px;
+  }
+
+  .obj-right p {
+    font-size: 20px;
+  }
+
+  .sticky p {
+    font-size: 23px;
+  }
+
+  .attach-text p {
+    font-size: 23px;
+  }
+
+  .part-left p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+
+  .hero-text h1 {
+    font-size: 70px;
+  }
+
+  .transform-left p {
+    font-size: 25px;
+  }
+
+  .obj-right p {
+    font-size: 25px;
+  }
+
+  .obj-right a {
+    font-size: 20px;
+    padding: 15px 25px;
+  }
+
+  .sticky p {
+    font-size: 30px;
+  }
+
+  .attach-text p {
+    font-size: 30px;
+  }
+
+  .part-left h1 {
+    font-size: 35px;
+  }
+
+  .part-left p {
+    font-size: 25px;
+  }
+
+  .part-left a {
+    padding: 15px 25px;
+    font-size: 20px;
+  }
+
+  .questions p {
+    font-size: 30px;
+  }
+
+  .accordion {
+    max-width: 1500px;
+  }
+
+  .accordion .title {
+    font-size: 25px;
+  }
+
+  .accordion .content {
+    font-size: 20px;
   }
 }
