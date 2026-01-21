@@ -283,6 +283,10 @@ nav a:hover {
   gap: 30px;
 }
 
+.wl-bottom p {
+  font-size: 20px;
+}
+
 .wl-img {
   display: flex;
   gap: 0;
@@ -903,6 +907,10 @@ footer {
 
   .hero-text h1 {
     font-size: 70px;
+  }
+
+  .wl-bottom p {
+    font-size: 30px;
   }
 
   .transform-left p {
