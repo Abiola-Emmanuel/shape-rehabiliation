@@ -433,6 +433,10 @@ footer {
     gap: 50px;
   }
 
+  .form-left {
+    display: none;
+  }
+
   .catch,
   .form {
     width: 100%;
