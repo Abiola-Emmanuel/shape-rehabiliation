@@ -317,9 +317,77 @@ nav a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.services {
+  width: 100%;
+  margin: 100px auto;
+}
+
+.services h2 {
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+}
+
+.services-divs {
+  width: 95%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.serv-top,
+.serv-bottom {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.serv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 35%;
+  height: 300px;
+  padding: 30px 10px;
+  background-color: #000066;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.serv i {
+  background-color: white;
+  color: #000066;
+  font-size: 25px;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.serv h1 {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+.serv p {
+  font-size: 15px;
+  color: white;
+}
+
 .testimony {
   width: 90%;
-  margin: 100px auto 50px auto;
+  margin: 120px auto 50px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -454,6 +522,50 @@ nav a:hover {
   font-size: 15px;
 }
 
+.visit {
+  width: 90%;
+  height: 500px;
+  margin: 100px auto;
+  display: flex;
+}
+
+.visit-left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  padding-left: 50px;
+}
+
+.visit-left h2 {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lists p {
+  font-size: 16px;
+}
+
+.visit-right {
+  width: 40%;
+  position: relative;
+}
+
+.visit-right img {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 20px;
+}
+
 .team-div {
   width: 90%;
   margin: 100px auto;
@@ -488,7 +600,7 @@ nav a:hover {
 .st1 {
   border-radius: 20px;
   width: 25%;
-  height: 220px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -505,7 +617,7 @@ nav a:hover {
 }
 
 .st1 h2 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   text-align: center;
 }
@@ -598,6 +710,14 @@ footer {
     gap: 30px;
   }
 
+  .visit-left h2 {
+    font-size: 35px;
+  }
+
+  .lists p {
+    font-size: 25px;
+  }
+
   .test-left,
   .test-right {
     width: 40%;
@@ -609,6 +729,16 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .serv p {
+    font-size: 18px;
+  }
+
+  .serv {
+    gap: 30px;
+    height: 400px;
+    padding: 40px 40px;
   }
 
 }
@@ -666,6 +796,11 @@ footer {
     width: 80%;
   }
 
+  .services-divs {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .testimony .text {
     width: 100%;
   }
@@ -694,6 +829,33 @@ footer {
 
   .main-test {
     gap: 20px;
+  }
+
+  .serv-top,
+  .serv-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serv {
+    width: 60%;
+  }
+
+  .visit {
+    flex-direction: column;
+    margin: 50px auto;
+    height: 300px;
+    width: 80%;
+  }
+
+  .visit-left,
+  .visit-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .visit-right {
+    display: none;
   }
 
   .test-left img,
@@ -734,6 +896,10 @@ footer {
   .st1 {
     width: 90%;
   }
+
+  .serv {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 2000px) {
@@ -773,6 +939,36 @@ footer {
 
   .testimony .text p {
     font-size: 23px;
+  }
+
+  .serv {
+    width: 30%;
+    gap: 30px;
+    height: 400px;
+    padding: 30px 40px;
+  }
+
+
+  .serv i {
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .serv h1 {
+    font-size: 25px;
+  }
+
+  .serv p {
+    font-size: 23px;
+  }
+
+  .visit-left h2 {
+    font-size: 50px;
+  }
+
+  .lists p {
+    font-size: 30px;
   }
 
 }
