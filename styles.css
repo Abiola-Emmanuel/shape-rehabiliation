@@ -737,6 +737,11 @@ nav a:hover {
   padding-bottom: 8px;
 }
 
+#accountNumber {
+  color: black;
+  text-decoration: none;
+}
+
 .copy-btn {
   width: 100%;
   padding: 14px;
