@@ -32,8 +32,27 @@ function closeMenu() {
   document.body.style.overflow = '';
 }
 
+const accountNumber = document.getElementById('accountNumber');
+const statusMessage = document.getElementById('statusMessage');
 
 
+function copyAccount() {
+  navigator.clipboard.writeText(accountNumber.textContent)
+    .then(() => {
+      statusMessage.textContent = 'Account number copied successfully!';
+      statusMessage.style.color = 'green';
+      statusMessage.style.textAlign = 'center'
+      statusMessage.style.marginTop = '20px'
+    })
+    .catch(err => {
+      statusMessage.textContent = 'Failed to copy text. Please try again.';
+      statusMessage.style.color = 'red';
+    });
+
+  setTimeout(() => {
+    statusMessage.textContent = ''
+  }, 3000)
+}
 
 
 document.addEventListener('DOMContentLoaded', function () {

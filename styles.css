@@ -597,6 +597,91 @@ nav a:hover {
   transform: scale(1.1);
 }
 
+.support {
+  width: 90%;
+  height: 600px;
+  margin: auto;
+  padding: 80px 20px;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.support-left,
+.support-right {
+  height: 100%;
+  position: relative;
+}
+
+.support-left {
+  width: 60%;
+}
+
+.support-right {
+  width: 40%;
+}
+
+.support-card {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.support-card h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.support-card .desc {
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+.bank-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.bank-details .row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 8px;
+}
+
+.copy-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  background-color: #000066;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.copy-btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.support-right img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 20px;
+}
+
+
 .questions {
   width: 90%;
   margin: 50px auto;
@@ -803,6 +888,19 @@ footer {
     width: 100%;
   }
 
+  .support {
+    height: 500px;
+    margin-top: -50px;
+  }
+
+  .support-left {
+    width: 100%;
+  }
+
+  .support-right {
+    display: none;
+  }
+
   .item .title {
     font-size: 15px;
   }
@@ -901,6 +999,18 @@ footer {
   .part-left p {
     font-size: 20px;
   }
+
+  .support-left h2 {
+    font-size: 40px;
+  }
+
+  .support .desc {
+    font-size: 20px;
+  }
+
+  .bank-details {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 2000px) {
@@ -961,5 +1071,29 @@ footer {
 
   .accordion .content {
     font-size: 20px;
+  }
+
+  .support {
+    height: 800px;
+  }
+
+  .support-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .support-left h2 {
+    font-size: 50px;
+  }
+
+  .support .desc {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .bank-details {
+    font-size: 30px;
   }
 }
