@@ -565,6 +565,16 @@ nav a:hover {
   font-size: 16px;
 }
 
+.visit-left a {
+  color: white;
+  background-color: #000066;
+  padding: 10px 30px;
+  font-size: 14px;
+  align-self: flex-start;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
 .visit-right {
   width: 40%;
   position: relative;
@@ -856,7 +866,7 @@ footer {
   .visit {
     flex-direction: column;
     margin: 50px auto;
-    height: 300px;
+    height: 380px;
     width: 80%;
   }
 
