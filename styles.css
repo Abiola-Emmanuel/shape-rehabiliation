@@ -767,7 +767,7 @@ nav a:hover {
 
 .questions {
   width: 90%;
-  margin: 50px auto;
+  margin: 90px auto;
 }
 
 .questions h1 {
@@ -987,6 +987,7 @@ footer {
   .support {
     height: 500px;
     margin-top: -50px;
+    width: 100%;
   }
 
   .support-left {
