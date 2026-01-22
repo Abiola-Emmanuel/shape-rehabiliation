@@ -183,6 +183,24 @@ p {
   flex-direction: column;
 }
 
+#visitSm1,
+#visitSm2,
+#visitSm3,
+#visitSm4 {
+  display: none;
+}
+
+
+.event1 button {
+  align-self: flex-start;
+  background-color: #000066;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+}
+
 .event1 h2 {
   font-weight: 400;
   font-size: 40px;
@@ -214,6 +232,12 @@ p {
 .e1-img img:hover {
   transform: scale(1.05);
   cursor: pointer;
+}
+
+.visit-sm,
+.staff-sm,
+.aw-sm {
+  display: none;
 }
 
 footer {
