@@ -993,6 +993,8 @@ footer {
     height: 500px;
     margin-top: -50px;
     width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .support-left {
