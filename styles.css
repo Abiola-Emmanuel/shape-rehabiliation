@@ -10,8 +10,32 @@
 }
 
 body {
+  width: 100%;
+  position: relative;
   font-family: "IBM Plex Sans";
   background: linear-gradient(to bottom right, white 90%, #FF00FF 190%);
+}
+
+.fixed-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  text-decoration: none;
+  font-size: 35px;
+  padding: 25px;
+  color: #25d366;
+  background-color: white;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .hero {
@@ -470,6 +494,74 @@ nav a:hover {
 .obj-right a:hover {
   transform: scale(1.1);
 }
+
+.ngo-section {
+  padding: 80px 20px;
+  width: 95%;
+  margin: auto;
+}
+
+.ngo-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.ngo-text h2 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.ngo-text p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.ngo-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 24px;
+  background: #000066;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.ngo-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ngo-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.ngo-card i {
+  font-size: 22px;
+  color: #000066;
+  margin-bottom: 10px;
+}
+
+.ngo-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.ngo-card p {
+  font-size: 14px;
+  color: #555;
+}
+
 
 .conduct-div {
   width: 90%;
@@ -959,6 +1051,10 @@ footer {
     width: 100%;
   }
 
+  .ngo-container {
+    grid-template-columns: 1fr;
+  }
+
   .attached {
     background-position: center;
   }
@@ -1077,6 +1173,22 @@ footer {
   .contact-info {
     font-size: 20px;
   }
+
+  .ngo-text h1 {
+    font-size: 52px;
+  }
+
+  .ngo-text h2 {
+    font-size: 40px;
+  }
+
+  .ngo-text h3 {
+    font-size: 24px;
+  }
+
+  .ngo-text p {
+    font-size: 17px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1135,6 +1247,22 @@ footer {
 
   .bank-details {
     font-size: 20px;
+  }
+
+  .ngo-text h1 {
+    font-size: 44px;
+  }
+
+  .ngo-text h2 {
+    font-size: 36px;
+  }
+
+  .ngo-text h3 {
+    font-size: 22px;
+  }
+
+  .ngo-text p {
+    font-size: 16px;
   }
 }
 
@@ -1249,5 +1377,26 @@ footer {
 
   .bank-details {
     font-size: 30px;
+  }
+
+  .ngo-container {
+    gap: 100px;
+  }
+
+  .ngo-text h1 {
+    font-size: 64px;
+  }
+
+  .ngo-text h2 {
+    font-size: 48px;
+  }
+
+  .ngo-text h3 {
+    font-size: 28px;
+  }
+
+  .ngo-text p {
+    font-size: 18px;
+    line-height: 1.8;
   }
 }
