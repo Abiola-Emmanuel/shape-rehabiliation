@@ -567,6 +567,23 @@ nav a:hover {
   font-size: 15px;
 }
 
+.skills {
+  width: 50%;
+  margin: auto;
+  height: 500px;
+  position: relative;
+}
+
+.skills img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
 .visit {
   width: 90%;
   height: 500px;
@@ -732,6 +749,10 @@ footer {
     gap: 40px;
   }
 
+  .skills {
+    height: 600px;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -810,6 +831,9 @@ footer {
     padding: 40px 40px;
   }
 
+  .skills {
+    height: 600px;
+  }
 }
 
 
@@ -942,6 +966,10 @@ footer {
     width: 45%;
   }
 
+  .skills {
+    width: 90%;
+  }
+
   footer {
     padding: 5px 14px;
   }
@@ -1064,6 +1092,11 @@ footer {
   .mt-top,
   .mt-bottom {
     gap: 50px;
+  }
+
+  .skills {
+    width: 35%;
+    height: 750px;
   }
 
 }
