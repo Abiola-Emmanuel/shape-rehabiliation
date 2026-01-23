@@ -750,7 +750,8 @@ footer {
   }
 
   .skills {
-    height: 600px;
+    width: 40%;
+    height: 800px;
   }
 
 }
@@ -1096,7 +1097,7 @@ footer {
 
   .skills {
     width: 35%;
-    height: 750px;
+    height: 1000px;
   }
 
 }
