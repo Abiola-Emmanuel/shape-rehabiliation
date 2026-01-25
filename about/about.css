@@ -447,6 +447,21 @@ nav a:hover {
   align-items: stretch;
 }
 
+.mt-top p,
+.mt-bottom p {
+  font-size: 18px;
+}
+
+.test-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 5;
+  color: white;
+  text-align: center;
+}
+
 .test-left,
 .test-right {
   flex: 1;
@@ -457,21 +472,12 @@ nav a:hover {
   position: relative;
 }
 
-.main-test h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%);
-  z-index: 5;
-  color: white;
-}
-
 .test-left img,
 .test-right img {
   width: 100%;
   max-height: 500px;
   object-fit: cover;
-  filter: brightness(0.9);
+  filter: brightness(0.85);
 }
 
 
