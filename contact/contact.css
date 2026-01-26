@@ -415,6 +415,19 @@ nav a:hover {
 
 }
 
+.c-1 span {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 10px;
+  display: block;
+}
+
+.c-1 i {
+  font-size: 22px;
+  color: #000066;
+}
+
+
 footer {
   width: 100%;
   margin: 40px auto 0px auto;
